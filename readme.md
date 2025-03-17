@@ -35,18 +35,18 @@ http://127.0.0.1:5000/search?query=test
 Для подключения к серверу в Cline используйте следующую конфигурацию:
 
 {
-  "mcpServers": {
-    "file-finder-mcp": {
-      "args": [
-        "python",
-        "main.py"
-      ],
-      "command": "python",
-      "autoApprove": [],
-      "disabled": false
+    "mcpServers": {
+      "file-finder-mcp": {
+        "args": [
+          "main.py"
+        ],
+        "command": "py",
+        "autoApprove": ["search"],
+        "disabled": false
+        }
     }
-  }
 }
+  
 
 Этот конфиг запускает сервер Flask в Cline.
 
